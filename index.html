@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Mano di Scrupolo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>La Mano di Scrupolo</h1>
+        </header>
+
+        <div class="input-section">
+            <div class="input-field">
+                <label for="input1"> Rätsel Rekrut:</label>
+                <input type="text" id="input1" maxlength="5">
+                <button onclick="checkInput1(event)">Überprüfen</button> <!-- Übergibt event an die Funktion -->
+                <span id="result1" class="result-message"></span> <!-- Ergebnisanzeige -->
+            </div>
+
+            <div class="input-field">
+                <label for="input2"> Rätsel Capo:</label>
+                <input type="text" id="input2" maxlength="5">
+                <button onclick="checkInput2(event)">Überprüfen</button> <!-- Übergibt event an die Funktion -->
+                <span id="result2" class="result-message"></span> <!-- Ergebnisanzeige -->
+            </div>
+
+            <div class="input-field">
+                <label for="input3">Rätsel Pate:</label>
+                <input type="text" id="input3" maxlength="5">
+                <button onclick="checkInput3(event)">Überprüfen</button> <!-- Übergibt event an die Funktion -->
+                <span id="result3" class="result-message"></span> <!-- Ergebnisanzeige -->
+            </div>
+        </div>
+
+        <div id="result" class="result"></div>
+
+        <!-- Neues Eingabefeld für 7 Zahlen (wird erst nach erfolgreichem Abschluss angezeigt) -->
+        <div id="finalInputSection" class="input-field" style="display: none;">
+            <label for="finalInput">Finale Zahl (7 Zahlen):</label>
+            <input type="text" id="finalInput" maxlength="7">
+            <button onclick="checkFinalInput(event)">Überprüfen</button> <!-- Übergibt event an die Funktion -->
+            <span id="finalResult" class="result-message"></span> <!-- Ergebnisanzeige -->
+        </div>
+
+        <!-- Bereich für das Bild und den Text, wenn der neue Pate bestätigt wird -->
+        <div id="pateInfo" style="display: none;">
+            <img id="pateImage" src="" alt="Neuer Pate" style="max-width: 100%; margin-top: 20px;">
+            <p id="pateText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
