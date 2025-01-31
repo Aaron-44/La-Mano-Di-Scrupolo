@@ -66,7 +66,7 @@ function checkAllInputs() {
         resultText.textContent = 
         "Congratulazioni! Du bist bereit in das Buch der Paten zu schreiben.\n" +
         "Das Buch der Bücher – nein nicht die Bibel – sondern das Geheimregister aller Mafiosis – alle mächtigen Paten müssen sich dort eintragen.\n" +
-        "Du hast nur einen Versuch – wen du scheiterst waren alle Mühen umsonst.\n" +
+        "Du hast nur einen Versuch – wenn du scheiterst waren alle Mühen umsonst.\n" +
         "Bei Erfolg bist Du der neue Pate!\n\n" +
         "So stehe der Gründer Giuseppe Mazzini auf der ersten Seite mit der Zahl 1,\n" +
         "Ein weiterer Giuseppe Masseria steht auf Seite 2 auch mit der Zahl 1,\n" +
